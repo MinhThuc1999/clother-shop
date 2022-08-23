@@ -1,0 +1,86 @@
+@use "../../../../scss/" as *;
+
+.order-option-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+
+  .color,
+  .size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $text-light;
+    border-radius: 99px;
+
+    &:hover {
+      border: 3px solid $primary;
+    }
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $text-light;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .color {
+    margin-right: 20px;
+  }
+
+  .size {
+    border: 2px solid $text-light;
+    margin-right: 20px;
+  }
+
+  .size-option,
+  .color-option {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .text {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .number-option {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .number {
+    height: 100%;
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid $text-light;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    border: 1px solid $text-light;
+    height: 40px;
+    padding: 0 0.6rem;
+  }
+
+  .btn-add {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+  .btn-buy {
+    margin-left: 0;
+  }
+
+  .active {
+    border: 3px solid $primary;
+  }
+}
